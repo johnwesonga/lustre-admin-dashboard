@@ -1,17 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
 
-    <title>
-      client
-    </title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Dashboard</title>
 
+  <!-- Lustre server component client runtime -->
+  <script src="/static/lustre-server-component.js"></script>
 
+  <link rel="stylesheet" href="/static/dashboard.css" />
+</head>
 
+<body>
+  <!-- That's it — the custom element IS the client runtime -->
+  <lustre-server-component route="/ws" method="websocket" style="height:100vh;display:block;">
+  </lustre-server-component>
+</body>
 
-    <script src="/client.js" type="module"></script>
-  </head>
-  <body><div id="app"></div></body>
 </html>
