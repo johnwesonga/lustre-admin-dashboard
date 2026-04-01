@@ -1,5 +1,5 @@
 #!/bin/bash
-# install nginx
+# install latest nginx image
 podman pull nginx
 
 podman run --name admin_nginx -p 8080:80 -d \
